@@ -28,7 +28,7 @@ Open the URL printed by Vite (normally `http://localhost:5173/PolyAgent/`).
 
 ## Production setup
 
-GitHub Actions deploys the client to GitHub Pages after every push to `main`. In the repository's Actions secrets, set the Firebase `VITE_FB_*` values and set `VITE_API_BASE` to the public **HTTPS backend origin**, without `/api` at the end.
+GitHub Actions deploys the client to GitHub Pages after every push to `main`. In the repository's Actions secrets, set the Firebase `VITE_FB_*` values. The workflow uses `https://polyagent-api.onrender.com` as the default API origin; set `VITE_API_BASE` to another public **HTTPS backend origin**, without `/api` at the end, to override it.
 
 The Express server must be deployed separately to a Node.js host. Configure these server secrets there:
 
@@ -40,7 +40,7 @@ Use `npm start` as the server start command and `/api/health` as the health-chec
 
 ### Render
 
-This repository includes a `render.yaml` Blueprint for the backend. In Render, create a Blueprint from this repository and provide `OPENAI_API_KEY` and `FIREBASE_SERVICE_ACCOUNT` when prompted. After deployment, set the GitHub Actions secret `VITE_API_BASE` to the Render service URL and rerun the Pages workflow.
+This repository includes a `render.yaml` Blueprint for the backend. In Render, create a Blueprint from this repository and provide `OPENAI_API_KEY` and `FIREBASE_SERVICE_ACCOUNT` when prompted. The default Render service URL is already configured in the Pages workflow.
 
 ## Verify before pushing
 
