@@ -2,7 +2,7 @@
 
 PolyAgent is a React/Vite chat client with Firebase authentication and an Express/OpenAI backend.
 
-Public site: https://alishajesani.github.io/project1/
+Public site: https://alishajesani.github.io/PolyAgent/
 
 ## Run locally
 
@@ -24,7 +24,7 @@ cp .env.example .env
 npm run dev
 ```
 
-Open the URL printed by Vite (normally `http://localhost:5173/project1/`).
+Open the URL printed by Vite (normally `http://localhost:5173/PolyAgent/`).
 
 ## Production setup
 

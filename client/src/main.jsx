@@ -6,7 +6,7 @@ import "./index.css";
 // ✅ base url for GitHub Pages + local
 const base = import.meta.env.BASE_URL;
 
-// this will become: url(/project1/polyagent-watermark.png) on Pages
+// this will become: url(/PolyAgent/polyagent-watermark.png) on Pages
 document.documentElement.style.setProperty(
   "--watermark-url",
   `url(${base}polyagent-watermark.png)`
