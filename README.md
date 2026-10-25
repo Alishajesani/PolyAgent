@@ -28,7 +28,7 @@ Open the URL printed by Vite (normally `http://localhost:5173/PolyAgent/`).
 
 ## Production setup
 
-GitHub Actions deploys the client to GitHub Pages after every push to `main`. In the repository's Actions secrets, set the Firebase `VITE_FB_*` values. The workflow uses `https://polyagent-api.onrender.com` as the default API origin; set `VITE_API_BASE` to another public **HTTPS backend origin**, without `/api` at the end, to override it.
+GitHub Actions deploys the client to GitHub Pages after every push to `main`. In the repository's Actions secrets, set the Firebase `VITE_FB_*` values. The workflow uses `https://polyagent-api-qtuw.onrender.com` as the default API origin; set `VITE_API_BASE` to another public **HTTPS backend origin**, without `/api` at the end, to override it.
 
 The Express server must be deployed separately to a Node.js host. Configure these server secrets there:
 
